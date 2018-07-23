@@ -14,6 +14,8 @@
         <module>taotao-manager-dao</module>
         <module>taotao-manager-Service</module>
         <module>taotao-manager-web</module>
+        <module>taotao-rest</module>
+        <module>taotao-portal</module>
         <!--<module>taotao-manager-web</module>-->
     </modules>
     <packaging>pom</packaging>

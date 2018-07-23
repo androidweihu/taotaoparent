@@ -8,6 +8,7 @@ import com.taotao.service.ItemParamService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -38,6 +39,19 @@ public class ItemParamServiceImpl implements ItemParamService {
              */
             return TaotaoResult.ok(itemParam);
         }
+        return TaotaoResult.ok();
+    }
+
+    @Override
+    public TaotaoResult insertItemParam(Long cid, String paramData) {
+        //创建一个pojo
+        TbItemParam itemParam = new TbItemParam();
+        itemParam.setItemCatId(cid);
+        itemParam.setParamData(paramData);
+        itemParam.setCreated(new Date());
+        itemParam.setUpdated(new Date());
+        //插入记录
+        itemParamMapper.insert(itemParam);
         return TaotaoResult.ok();
     }
 }
