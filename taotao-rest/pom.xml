@@ -12,12 +12,7 @@
     <artifactId>taotao-rest</artifactId>
     <packaging>war</packaging>
     <dependencies>
-        <!-- 依赖taotao-manager的mapper模块 -->
-        <dependency>
-            <groupId>com.taotao</groupId>
-            <artifactId>taotao-manager-mapper</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+
         <!-- Spring -->
         <dependency>
             <groupId>org.springframework</groupId>
